@@ -34,7 +34,7 @@ export const Options = []
 
 // Here is the component to be rendered, it takes two props : placeHolder and options (the options array).
 
-export const Dropdown = ({ placeHolder, options }) => {
+const Dropdown = ({ placeHolder, options }) => {
 
   const [showMenu, setShowMenu] = useState(false);
   const [selectedValue, setSelectedValue] = useState(null);
@@ -122,3 +122,5 @@ export const Dropdown = ({ placeHolder, options }) => {
   )
 
 };
+
+export default Dropdown
