@@ -1,10 +1,15 @@
 import React from 'react'
 
-import { ExampleComponent } from 'simplest-dropdown'
+import { Dropdown, Options } from 'simplest-dropdown'
 import 'simplest-dropdown/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <>
+      <Dropdown placeHolder="Select..." options={Options} />
+    </>
+  )
+
 }
 
 export default App
